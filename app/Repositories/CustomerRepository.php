@@ -38,6 +38,13 @@ class CustomerRepository
             
     }
 
+    public function update($id)
+    {
+        $customer = Customer::find($id);
+        $customer->update(request()->all());
+
+    }
+
     protected function transform($customer)
     {
         return [
