@@ -2,9 +2,10 @@
 
 namespace App\Repositories;
 
+use App\Repositories\Interfaces\CustomerRepositoryInterface;
 use App\Models\Customer;
 
-class CustomerRepository
+class CustomerRepository implements CustomerRepositoryInterface
 {
     public function getAll()
     {
